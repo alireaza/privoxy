@@ -7,8 +7,8 @@ $ docker build --tag alireaza/privoxy:$(date -u +%Y%m%d) --tag alireaza/privoxy:
 ```
 
 ## Run
-Forward [OpenConnect](https://github.com/alireaza/openconnect) SOCKS5:9052 to HTTP:9053
+Forward [OpenConnect](https://github.com/alireaza/openconnect) SOCKS5:1080 to HTTP:8118
 ```bash
-$ docker run --interactive --tty --rm --add-host="socks5:172.17.0.1" --publish="9053:8118" --name="privoxy" alireaza/privoxy
+$ docker run --interactive --tty --rm --add-host="socks5:172.17.0.1" --publish="8118:8118" --name="privoxy" alireaza/privoxy
 ```
 
