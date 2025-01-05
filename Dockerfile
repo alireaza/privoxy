@@ -10,4 +10,4 @@ RUN echo "forward-socks5 / socks5:1080 ." >> /etc/privoxy/config
 
 EXPOSE 8118
 
-CMD privoxy --no-daemon /etc/privoxy/config
+CMD ["privoxy", "--no-daemon", "/etc/privoxy/config"]
